@@ -1,14 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import store from './store';
+import { Provider } from "react-redux";
 
-import Header from './Header.jsx';
+import Header from './components/Header.jsx';
+import ContentArea from './components/ContentArea';
 
 const App = () => {
   return (
-    <div className='container'>
-      <Header/>
-      <div className="container-view">Some activities should be here</div>
-    </div>
+      <Provider store={store}>
+        <div className='container'>
+          <Header/>
+          <div className='content-area'>
+              <ContentArea />
+          </div>
+        </div>
+      </Provider>
+
   );
 };
 

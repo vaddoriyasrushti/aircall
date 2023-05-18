@@ -1,0 +1,68 @@
+.content-area {
+    height: 585px;
+    min-height: 585px;
+}
+
+.activity-tab {
+    display: flex;
+    align-items: center;
+}
+.loader-area {
+    height: 535px;
+    width: 10%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+.listing-area {
+    height: 536px;
+}
+
+.archive-all-calls, .unarchive-all-calls {
+    height: 50px;
+    border-radius: 5px;
+    border: 0.5px solid lightgray;
+    border-top: none;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MuiBox-root .css-19kzrtu {
+    padding: 0px 15px 15px 15px;
+}
+
+.archive-icon > path {
+        font-size: 15px;
+}
+
+.scrollbar
+{
+    width: 361px;
+    height: 485px;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+
+#scroll::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+#scroll::-webkit-scrollbar
+{
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+#scroll::-webkit-scrollbar-thumb
+{
+    background-color: grey;
+}
+
+

@@ -1,0 +1,105 @@
+.call-container {
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+    padding: 10px;
+    margin: 20px 31px 20px 2px;
+    height: auto;
+    width: 322px;
+    display: grid;
+    grid-template-columns: 10% 60% 20% 10%;
+    grid-template-rows: auto;
+    cursor: pointer;
+}
+
+.container-calls-list {
+    width: 347px;
+    margin-top: 15px;
+    height: 400px;
+}
+
+.date-format {
+    position: relative;
+    font-size: 14px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+
+.date-format:before, .date-format:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    background-color: lightgray;
+}
+
+.date-format:before {
+    margin-left: -50%;
+    text-align: right;
+}
+
+.call-container:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.call-container p{
+    color: rgb(144, 144, 144);
+    font-size: 1.2em;
+}
+.call-container >ul{
+    padding-left: 15px;
+    list-style: none;
+
+}
+
+.time{
+    padding-top: 25%;
+    font-size: 0.75rem;
+    color: rgb(58, 57, 57);
+
+}
+
+li:first-child{
+    color: rgb(144, 144, 144);
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 8px;
+}
+
+.call-container .information{
+    text-decoration: none;
+    font-size: 1.25rem;
+    color:#0c0c95;
+}
+
+.information span{
+    font-size: 0.75em;
+}
+
+.icon-color {
+    color: green;
+}
+
+.missed-icon-color {
+    color: red;
+}
+
+.voice-icon-color {
+    color: blue;
+}
+
+.phone-icon-section {
+    padding-top: 25%;
+    border-right: 0.5px dotted lightgray;
+}
+
+.time-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.archive-section {
+    border-left: 0.5px dotted lightgray;
+}
