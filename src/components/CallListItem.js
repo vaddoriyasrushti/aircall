@@ -18,13 +18,15 @@ const CallListItem = ({call, setSelectedCall}) => {
     const time = moment(created_at).format('h:mm a');
 
     //Function to handle the button that sends patch request to unarchive calls
-    const handleUnarchive = () => {
+    const handleUnarchive = (e) => {
+        e.stopPropagation();
         const data = { ...call, is_archived: false };
         dispatch(updateAirCallList(id, data));
     };
 
     //Function to handle the button that sends patch request to archive calls
-    const handleArchive = () => {
+    const handleArchive = (e) => {
+        e.stopPropagation();
         const data = { ...call, is_archived: true };
         dispatch(updateAirCallList(id, data));
     };
